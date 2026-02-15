@@ -5,7 +5,7 @@ import { Button } from './ui/button';
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
 import { setUser } from '@/redux/userSlice';
-import API_URL from "src/config.js"
+import API_URL from "@config.js"
 
 const Navbar = () => {
   const {user}=useSelector(store=>store.user)
