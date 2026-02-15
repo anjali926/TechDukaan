@@ -1,0 +1,16 @@
+node_module/
+frontend/node_modules/
+backend/node_modules/
+
+.env
+.env.*
+frontend/.env
+backend/.env
+
+build/
+dist/
+
+*.log
+logs/
+.DS_store
+.VSCode/
