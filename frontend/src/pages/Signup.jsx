@@ -15,6 +15,7 @@ import { Link,useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
 import { toast } from "sonner";
+import API_URL from "@/config";
 
 const Signup = () => {
   const [showPassword, setshowPassword] = useState(false);
@@ -39,7 +40,7 @@ const Signup = () => {
     console.log(formData);
     try {
       setLoading(true)
-      const res=await axios.post(`http://localhost:8000/api/v1/user/register`,formData,{
+      const res=await axios.post(`${API_URL}/api/v1/user/register`,formData,{
         headers:{
           "Content-Type":"application/json"
         }
