@@ -39,6 +39,9 @@ import "dotenv/config";
 
 export const verifyEmail = async (token, email) => {
   try {
+    console.log("CLIENT_URL:", process.env.CLIENT_URL);
+    console.log("MAIL_USER:", process.env.MAIL_USER);
+
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
