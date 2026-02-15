@@ -1,4 +1,4 @@
-import Footer from '@/components/footer'
+import Footer from '@/components/Footer'
 import Hero from '@/components/Hero'
 import React from 'react'
 
