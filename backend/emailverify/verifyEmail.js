@@ -59,7 +59,7 @@ export const verifyEmail = async (token, email) => {
 You recently signed up on our website.
 Please click the link below to verify your email:
 
-http://localhost:5173/verify/${token}
+ ${process.env.CLIENT_URL}/verify/${token}
 
 Thanks,
 TechDukaan Team`,
