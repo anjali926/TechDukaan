@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
 import { setUser } from '@/redux/userSlice';
 import API_URL from '@/config';
+import { toast } from 'sonner';
 
 
 const Navbar = () => {

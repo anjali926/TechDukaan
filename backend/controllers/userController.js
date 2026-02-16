@@ -34,7 +34,7 @@ export const register = async (req, res) => {
       expiresIn: "10m",
     });
 
-    verifyEmail(token, email); //send verification email here
+    await verifyEmail(token, email); //send verification email here
 
     newUser.token = token; //save token
     await newUser.save();
