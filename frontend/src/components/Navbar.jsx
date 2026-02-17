@@ -44,7 +44,7 @@ const Navbar = () => {
         <Link to={'/'}><li>Home</li></Link>
         <Link to={'/products'}><li>products</li></Link>
         {
-          user&&<Link to={'/profile'}><li>Hello, {user.firstName}</li></Link>
+          user&&<Link to={`/profile/${user._id}`}><li>Hello, {user.firstName}</li></Link>
         }
 
       </ul>

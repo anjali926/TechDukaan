@@ -3,8 +3,8 @@ import mongoose from "mongoose";
 const userSchema=new mongoose.Schema({
     firstName:{type:String,required:true},
     lastName:{type:String,required:true},
-    profilepic:{type:String,default:""},//cloduinary image
-    profilepicpublicId:{type:String,default:""},//cloudinary public id for deletion
+    profilePic:{type:String,default:""},//cloduinary image
+    profilePicPublicId:{type:String,default:""},//cloudinary public id for deletion
     email:{type:String,required:true,unique:true},
     password:{type:String,required:true},
     role:{
@@ -19,8 +19,8 @@ const userSchema=new mongoose.Schema({
     otpExpiry:{type:Date,default:null},
     address:{type:String},
     city:{type:String},
-    zipcode:{type:String},
-    phoneNo:{type:String},
+    pincode:{type:String},
+    phonenumber:{type:String},
 },{timestamps:true})
 
 export const User=mongoose.model("User", userSchema)

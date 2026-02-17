@@ -35,7 +35,7 @@ import Profile from "./pages/Profile";
     element:<><ReVerify/></>
   },
   {
-    path:'/profile',
+    path:'/profile/:userId',
     element:<><Navbar/><Profile/></>
   },
 
