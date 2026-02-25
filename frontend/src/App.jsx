@@ -8,6 +8,8 @@ import Verify from "./pages/Verify";
 import VerifyEmail from "./pages/VerifyEmail";
 import ReVerify from "./pages/ReVerify";
 import Profile from "./pages/Profile";
+import Products from "./pages/Products";
+import Cart from "./pages/Cart";
  
  const router = createBrowserRouter([
   {
@@ -38,7 +40,15 @@ import Profile from "./pages/Profile";
     path:'/profile/:userId',
     element:<><Navbar/><Profile/></>
   },
-
+  {
+    path:'/products',
+    element:<><Navbar/><Products/></>
+  },
+ {
+    path:'/cart',
+    element:<><Navbar/><Cart/></>
+  },
+ 
  ])
 
 
